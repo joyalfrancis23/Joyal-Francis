@@ -334,7 +334,7 @@
 			</div>
 			<div class="col-lg-7 mt-lg-0 mt-5 contact-right">
 				<h4 class="mb-4">Get In Touch</h4>
-				<form id="gform" method="POST"  action="https://script.google.com/macros/s/AKfycbwkIG52atXwPF5VpylX4iAf0Nyvjm-PqUPtZ6Lol0cNzvUFjAQ/exec" >
+				<form id="submit-form" action="" >
 					<label for="fname"><span class="fa mr-2 fa-user" aria-hidden="true"></span> Name</label>
 					<input id="fname" type="text" name="name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
 					<div class="clearfix"></div>
@@ -388,7 +388,25 @@
 	</div>
 </div>
 <!-- //popup for btn -->
-
+<script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwkIG52atXwPF5VpylX4iAf0Nyvjm-PqUPtZ6Lol0cNzvUFjAQ/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    //window.location.reload()
+                    window.location.href="thanks.html"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 
 </body>
 </html>
