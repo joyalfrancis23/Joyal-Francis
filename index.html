@@ -335,17 +335,17 @@
 			<div class="col-lg-7 mt-lg-0 mt-5 contact-right">
 				<h4 class="mb-4">Get In Touch</h4>
 				<form id="gform" method="POST"  action="https://script.google.com/macros/s/AKfycbyBEtWM3MVSdurER9VyldLD16_JTXR79ePQcGzZ/exec" method="post">
-					<label><span class="fa mr-2 fa-user" aria-hidden="true"></span> Name</label>
-					<input type="text"  value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+					<label for="fname"><span class="fa mr-2 fa-user" aria-hidden="true"></span> Name</label>
+					<input type="text" name="name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
 					<div class="clearfix"></div>
-					<label><span class="fa mr-2 fa-envelope-open" aria-hidden="true"></span>Email</label>
-					<input type="email"  value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<label for="lname"><span class="fa mr-2 fa-envelope-open" aria-hidden="true"></span>Email</label>
+					<input type="email" name="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
 					<div class="clearfix"></div>
-					<label><span class="fa mr-2 fa-phone" aria-hidden="true"></span>Phone</label>
-					<input type="text"  value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" required="">
+					<label for="country"><span class="fa mr-2 fa-phone" aria-hidden="true"></span>Phone</label>
+					<input type="text" name="color" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" required="">
 					<div class="clearfix"></div>
-					<label><span class="fa mr-2 fa-edit" aria-hidden="true"></span>Message</label>
-					<textarea name="entry.1551044017" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+					<label for="subject"><span class="fa mr-2 fa-edit" aria-hidden="true"></span>Message</label>
+					<textarea name="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
 					<button onclick="location.href='thanks.html'" type="submit" class="btn"><a href="thanks.html" style="color: white;">Submit</a></button>
 					
 				</form>
